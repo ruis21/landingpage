@@ -1,6 +1,68 @@
 @import url(./reset.min.css);
 
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
 
 @font-face {
     font-family: 'Paperozi';
@@ -72,8 +134,11 @@
 
 body {
     font-family: 'Paperozi';
-    /* font-family: 'Pretendard'; */
     line-height: 1.2;
+}
+
+.pretendard {
+    font-family: 'Pretendard';
 }
 
 .container {
@@ -86,6 +151,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+    padding-top: 120px;
 }
 
 
@@ -93,7 +159,8 @@ body {
 .kv-sec {
     background-image: url("../image/main-bg.png");
     background-repeat: no-repeat;
-    background-position: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .kv-wrap {
@@ -173,7 +240,6 @@ body {
 }
 
 .plan-title {
-    padding-top: 120px;
     padding-bottom: 60px;
 }
 
@@ -198,6 +264,7 @@ body {
     height: 465px;
     background-color: white;
     border-radius: 20px;
+    gap: 2%;
 }
 
 .plan-card-subtitle01 {
@@ -208,7 +275,7 @@ body {
 .plan-card-title {
     font-size: 34px;
     font-weight: 600;
-    padding: 24px 24px;
+    /* padding: 24px; */
 }
 
 .plan-card-subtitle02 {
@@ -218,7 +285,301 @@ body {
 }
 
 .plan-card-desc {
-    padding: 46px;
+    padding: 20px 0;
 }
 
-@media (max-width: 1024px) {}
+.plan-card-desc p {
+    padding-top: 20px;
+}
+
+.plan-card-price {
+    margin-top: 20px;
+}
+
+.span01 {
+    text-decoration: line-through;
+    color: #727272;
+}
+
+.span02-1 {
+    color: #F95252;
+    font-weight: 600;
+}
+
+.span02-2 {
+    font-size: 30px;
+}
+
+.merit {
+    color: #727272;
+}
+
+.btn {
+    position: relative;
+}
+
+.plan-sec-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    text-decoration: none;
+    color: white;
+    background-color: #516AEC;
+    width: 210px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+
+/* discount 영역 */
+.discount-sec {
+    background-color: #2A3037;
+    width: 100%;
+    height: 872px;
+}
+
+.discount-title {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.discount-title span {
+    font-size: 42px;
+}
+
+.discount-card-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+}
+
+.discount-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 465px;
+    background-color: white;
+    border-radius: 20px;
+    gap: 2%;
+}
+
+.discount-card-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.discount-card-data ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.discount-card-data ul>li {
+    font-family: 'pretendard';
+    font-weight: 300;
+    width: 60px;
+    height: 24px;
+    border-radius: 4px;
+    color: white;
+    background-color: #516AEC;
+    padding: 3px;
+    text-align: center;
+}
+
+.discount-card-color ul {
+    display: flex;
+    gap: 10px;
+}
+
+.color01 {
+    background-color: #3C5BBA;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color02 {
+    background-color: #494A4D;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color03 {
+    background-color: #B0B7B9;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color04 {
+    background-color: #EE6779;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color05 {
+    background-color: #494949;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color06 {
+    background-color: #F8F8F6;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 0.5px solid #464545;
+}
+
+.color07 {
+    background-color: #E89ACC;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color08 {
+    background-color: #A2CAC9;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color09 {
+    background-color: #8296DF;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color10 {
+    background-color: #464545;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color11 {
+    background-color: #8B8781;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.color12 {
+    background-color: #E2E2E2;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 0.5px solid #464545;
+
+}
+
+.color13 {
+    background-color: #BCAC9F;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+
+.discount-card-price {
+    font-family: 'pretendard';
+    font-size: 24px;
+    font-weight: 600;
+    color: #F95252;
+}
+
+.discount-card-price span {
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 14px;
+    color: #879098;
+
+}
+
+.btn {
+    position: relative;
+}
+
+.discount-sec-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    width: 172px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* process 영역 */
+.process-sec {
+    background-color: #ADD2E2;
+    height: 633px;
+}
+
+.process-wrap {
+    margin-top: 60px;
+    background-color: white;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-card-bg {
+    background-color: #F4F6F8;
+    border-radius: 50%;
+    width: 142px;
+    height: 142px;
+    position: relative;
+}
+
+.process-card-bg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.process-text {
+    margin-top: 20px;
+}
+
+.process-arrow {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+/* @media (max-width: 1024px) {} */
