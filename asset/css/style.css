@@ -2,67 +2,92 @@
 
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
-    font-weight: 100;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-style: normal;
     font-weight: 900;
-    font-display: swap;
+    src: local('Pretendard-Black'),
+        url("../font/Pretendard-Black.ttf") format('truetype'),
+        url("../font/Pretendard-Black.woff2") format('woff2'),
+        url("../font/Pretendard-Black.woff") format('woff');
 }
 
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Pretendard-ExtraBold'),
+        url("../font/Pretendard-ExtraBold.ttf") format('truetype'),
+        url("../font/Pretendard-ExtraBold.woff2") format('woff2'),
+        url("../font/Pretendard-ExtraBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Pretendard-Bold'),
+        url("../font/Pretendard-Bold.ttf") format('truetype'),
+        url("../font/Pretendard-Bold.woff2") format('woff2') url("../font/Pretendard-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Pretendard-SemiBold'),
+        url("../font/Pretendard-SemiBold.ttf") format('truetype'),
+        url("../font/Pretendard-SemiBold.woff2") format('woff2'),
+        url("../font/Pretendard-SemiBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Pretendard-Medium'),
+        url("../font/Pretendard-Medium.ttf") format('truetype'),
+        url("../font/Pretendard-Medium.woff2") format("woff2"),
+        url("../font/Pretendard-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pretendard-Regular'),
+        url("../font/Pretendard-Regular.ttf") format('truetype'),
+        url("../font/Pretendard-Regular.woff2") format('woff2'),
+        url("../font/Pretendard-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Pretendard-Light'),
+        url("../font/Pretendard-Light.ttf") format('truetype'),
+        url("../font/Pretendard-Light.woff2") format('woff2'),
+        url("../font/Pretendard-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Pretendard-ExtraLight'),
+        url("../font/Pretendard-ExtraLight.ttf") format('truetype'),
+        url("../font/Pretendard-ExtraLight.woff2") format('woff2'),
+        url("../font/Pretendard-ExtraLight.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Pretendard-Thin'),
+        url("../font/Pretendard-Thin.ttf") format('truetype'),
+        url("../font/Pretendard-Thin.woff2") format('woff2'),
+        url("../font/Pretendard-Thin.woff") format('woff');
+}
 
 @font-face {
     font-family: 'Paperozi';
@@ -171,6 +196,7 @@ body {
     justify-content: space-between;
     gap: 2%
 }
+
 .kv-wrap img {
     width: 39%;
 }
@@ -183,6 +209,7 @@ body {
     font-size: 24px;
     line-height: 1.7;
 }
+
 .kv-subtitle span {
     color: #3C5BBA;
 }
@@ -227,17 +254,20 @@ body {
     justify-content: space-between;
     margin: 65px 0 65px;
 }
+
 .menu-wrap p {
     text-align: center;
     /* margin-top: 20px; */
     font-size: 20px;
     font-weight: 500;
 }
+
 .menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .menu-img {
     background-color: #F3F5FF;
     border-radius: 50%;
@@ -245,11 +275,12 @@ body {
     height: 142px;
     position: relative
 }
+
 .menu-img img {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 /* plan 영역 */
@@ -273,6 +304,7 @@ body {
     align-items: center;
     width: 100%;
     gap: 2%;
+    position: relative;
 }
 
 .plan-card {
@@ -293,7 +325,7 @@ body {
 }
 
 .plan-card-title {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 600;
     /* padding: 24px; */
 }
@@ -357,6 +389,30 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.plan-previous-btn {
+    position: absolute;
+    background-image: url("../image/left-arrow-gray.png");
+    background-position: cover;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: none;
+    left: -50px;
+    transform: translate(-50%);
+}
+
+.plan-next-btn {
+    background-image: url("../image/right-arrow-gray.png");
+    background-position: cover;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: none;
+    position: absolute;
+    right: -150px;
+    transform: translate(-50%);
+}
+
 /* discount 영역 */
 .discount-sec {
     background-color: #2A3037;
@@ -380,6 +436,7 @@ body {
     align-items: center;
     width: 100%;
     gap: 2%;
+    position: relative;
 }
 
 .discount-card {
@@ -550,6 +607,30 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.discount-previous-btn {
+    background-image: url("../image/left-arrow-white.png");
+    background-color: transparent;
+    background-position: cover;
+    width: 100px;
+    height: 100px;
+    border: none;
+    position: absolute;
+    left: -50px;
+    transform: translate(-50%);
+}
+
+.discount-next-btn {
+    background-image: url("../image/right-arrow-white.png");
+    background-color: transparent;
+    background-position: cover;
+    width: 100px;
+    height: 100px;
+    border: none;
+    position: absolute;
+    right: -150px;
+    transform: translate(-50%);
+}
+
 /* process 영역 */
 .process-sec {
     background-color: #ADD2E2;
@@ -603,11 +684,13 @@ body {
     height: 1742px;
     width: 100%;
 }
+
 .event-card01-wrap {
     margin-top: 60px;
 }
 
-.event-card01-row01, .event-card01-row02{
+.event-card01-row01,
+.event-card01-row02 {
     display: flex;
     align-items: center;
     gap: 3.2%;
@@ -618,6 +701,7 @@ body {
 .event-card01-row02 {
     margin-top: 40px;
 }
+
 .event-card01-1 {
     padding: 0 60px;
     display: flex;
@@ -626,13 +710,15 @@ body {
     border-radius: 20px;
     width: 49%;
     height: 270px;
-    background-color: #516AEC ;
+    background-color: #516AEC;
 }
+
 .event-card01-text {
     color: white;
     font-size: 36px;
     width: 50%;
 }
+
 /* .before::before {
     display: block;
     position: ;
@@ -644,9 +730,14 @@ body {
     background-color: #DC4FBB;
     position: absolute;
 } */
-.event-card01-1 spac {
+.event-card01-1 span {
     font-weight: 700;
 }
+
+.event-card01-img {
+    width: 150px;
+}
+
 .event-card01-2 {
     padding: 0 0;
     display: flex;
@@ -655,19 +746,23 @@ body {
     border-radius: 20px;
     width: 49%;
     height: 270px;
-    background-color: #8B5FE0 ;
+    background-color: #8B5FE0;
 }
-.event-card01-2 img {
-    width: 180px;
+
+.event-card01-text {
+    width: 50%;
 }
+
 .event-card01-2 span {
     color: #D6FF20;
 }
+
 .event-card01-2 a {
     font-size: 18px;
     text-decoration: underline;
     color: white;
 }
+
 .event-card01-3 {
     display: flex;
     justify-content: center;
@@ -675,9 +770,10 @@ body {
     border-radius: 20px;
     width: 49%;
     height: 270px;
-    background-color: #022B92 ;
+    background-color: #022B92;
     padding: 30px 0 30px 40px;
 }
+
 .event-card01-4 {
     display: flex;
     justify-content: center;
@@ -688,28 +784,34 @@ body {
     background-color: #DC4FBB;
     padding: 40px 0 40px 40px;
 }
+
 .event-card01-4 a {
     font-size: 18px;
     text-decoration: underline;
     color: white;
 }
+
 .event-card01-4 img {
-    width: 300px;
+    width: 60%;
 }
+
 .event-card02 {
     margin-top: 90px;
     background-color: #2A3037;
     height: 627px;
     border-radius: 20px;
 }
+
 .event-card02-text {
     padding: 60px 0 60px;
 }
+
 .event-card02-title {
     font-size: 40px;
     color: white;
     text-align: center;
 }
+
 /* .event-card02-title span {
     background-image: linear-gradient(#00FFEA, #DD00FF);
     background-clip : text;
@@ -720,11 +822,15 @@ body {
     color: white;
     text-align: center;
 }
+
 .event-card02-wrap {
     display: flex;
     justify-content: space-evenly;
 }
-.event-card02-1, .event-card02-2, .event-card02-3 {
+
+.event-card02-1,
+.event-card02-2,
+.event-card02-3 {
     width: 28%;
     gap: 4%;
     height: 380px;
@@ -737,7 +843,8 @@ body {
     text-align: center;
     gap: 5%;
 }
-.event-card02-desc span{
+
+.event-card02-desc span {
     background-color: #2A3037;
     border-radius: 30px;
     width: 80px;
@@ -745,12 +852,13 @@ body {
     color: white;
     padding: 7px;
 }
+
 .event-card02-desc h3 {
     margin-top: 22px;
     font-size: 28px;
     font-weight: 600;
     color: #2A3037;
-   padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .event-sec-btn {
@@ -776,27 +884,63 @@ body {
     background-color: #F3F5FF;
     height: 824px;
 }
+
 .review-wrap {
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    gap: 3%;
 }
-.review-card {
-    gap: 20px;
-}
+
 .review-subtitle {
     font-size: 22px;
     font-weight: 600;
     margin-top: 26px;
 }
+
+.review-card,
+.review-card img,
+.review-subtitle {
+    width: 100%;
+}
+
 .review-desc {
     margin-top: 14px;
     font-size: 14px;
     line-height: 1.5;
+    width: 100%;
+    padding: 0 2px;
 }
+
 .review-desc span {
     color: #3C5BBA;
 }
+
+.review-previous-btn {
+    background-image: url("../image/left-arrow-gray.png");
+    background-color: transparent;
+    background-position: cover;
+    width: 100px;
+    height: 100px;
+    border: none;
+    position: absolute;
+    left: -50px;
+    transform: translate(-50%, 100%);
+}
+
+.review-next-btn {
+    background-image: url("../image/right-arrow-gray.png");
+    background-color: transparent;
+    background-position: cover;
+    width: 100px;
+    height: 100px;
+    border: none;
+    position: absolute;
+    right: -150px;
+    transform: translate(-50%, 100%)
+}
+
 .review-sec-btn {
     display: flex;
     justify-content: space-evenly;
@@ -819,6 +963,7 @@ body {
 .contact-sec {
     height: 316px;
 }
+
 .contact-wrap {
     display: flex;
     justify-content: space-evenly;
@@ -826,84 +971,130 @@ body {
     gap: 30%;
     padding: 60px 0;
 }
+
 .contact-left {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .contact-left p {
     font-size: 24px;
 }
+
 .contact-left h2 {
     font-size: 60px;
     color: #516AEC;
     font-weight: 600;
 }
+
 .contact-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5%;
 }
-.circle01, .circle02 {
+
+.circle01,
+.circle02 {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     background-color: #2A3037;
     position: relative;
 }
+
 .circle-title {
     font-size: 24px;
     font-weight: 500;
     color: white;
 }
-.circle01-wrap, .circle02-wrap {
+
+.circle01-wrap,
+.circle02-wrap {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 
 @media (max-width: 1024px) {
+
+    /* commom 영역 */
     .title {
         font-size: 36px;
     }
+
+    /* kv 영역 */
     .kv-wrap {
         padding: 2%;
     }
-    
+
+    /* menu 영역 */
     .menu-wrap {
         padding: 0 2%;
     }
+
+    /* plan 영역 */
     .plan-card-wrap {
         padding: 0 2%;
     }
+
+    .plan-card-title {
+        font-size: 28px;
+    }
+
+    /* discount 영역 */
     .discount-card {
         padding: 0 2%;
     }
+
     .discount-card-title {
         font-size: 24px;
     }
-    .discount-card-price {
-        font-size: 20px;
+
+    .discount-card-data ul>li {
+        font-size: 15px;
     }
+
+    .discount-card-price {
+        font-size: 18px;
+    }
+
+    .discount-card-price span {
+        font-size: 12px;
+    }
+
+    /* process 영역 */
     .process-wrap {
         padding: 0 2%;
     }
-   .event-card01-wrap {
-    padding: 0 2%;
-   }
-   .evnet-card02-wrap {
-    padding: 0 2%;
-   }
-   .event-card01-text {
-    font-size: 32px;
-   }
-   .event-card01 img {
-    width: 90%;
-   }
-   .review-wrap {
-    padding: 0 2%;
-   }
+
+    /* event 영역 */
+    .event-card01-wrap {
+        padding: 0 2%;
+    }
+
+    .evnet-card02-wrap {
+        padding: 0 2%;
+    }
+
+    .event-card01-text {
+        font-size: 32px;
+    }
+
+    .event-card01 img {
+        width: 90%;
+    }
+
+    /* review 영역 */
+    .review-wrap {
+        padding: 0 2%;
+    }
+
+    /* contact 영역 */
+    .contact-left h2 {
+        font-size: 52px;
+    }
 }
