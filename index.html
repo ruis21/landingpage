@@ -14,7 +14,28 @@
 
 <body>
 
-    <header></header>
+    <!-- header-section -->
+    <header class="header-sec">
+        <div class="container header-con">
+            <h1 class="logo">로고</h1>
+            <!-- 햄버거 버튼. 모바일에서만 보이게 -->
+            <button type="button" class="hamburger-btn">
+                <img src="./asset/image/menu-icon.png" alt="메뉴 버튼">
+            </button>
+            <nav class="header-nav">
+
+                <button class="close-btn">
+                    <img src="./asset/image/x-icon.png" alt="아이콘">
+                </button>
+                <ul class="header-menu pretendard">
+                    <li>요금제 찾기</li>
+                    <li>휴대폰 찾기</li>
+                    <li>이벤트</li>
+                    <li>문의하기</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
 
@@ -347,12 +368,9 @@
                     <div class="event-card01-row01">
                         <div class="event-card01-1">
                             <div class="event-card01-text">
-                                <strong></strong>
                                 <span>무료 </span>배송 <br> <span class="before">당일</span> 배송
                             </div>
-                            <div class="event-card01-img">
-                                <img src="./asset/image/card01-icon01.png" alt="이벤트 이미지" class="event-card01-img">
-                            </div>
+                            <img src="./asset/image/card01-icon01.png" alt="이벤트 이미지" class="event-card01-img">
                         </div>
 
                         <div class="event-card01-2">
@@ -460,7 +478,7 @@
                         <img src="./asset/image/review-img04.png" alt="리뷰 이미지">
                         <div class="review-subtitle pretendard">갤럭시 Z플립6/128GB</div>
                         <div class="review-desc pretendard">
-                            <p>가족 추천으로 통신사 옮겼는데 왜 이제 알게 됐나 아쉬워요. 유심도 편의점에서 구입 가능해서 택배 기다리지 않아도되...</p>
+                            <p>가족 추천으로 통신사 옮겼는데 왜 이제 알게 됐나 아쉬워요. 유심도 편의점에서 구입 가능해서 택배기다리지 않아도되...</p>
                             <span>★ ★ ★ ★ ★</span>
                         </div>
                     </div>
@@ -521,6 +539,22 @@
     </main>
 
     <footer></footer>
+
+    <script>
+
+        let btn = document.querySelector(".hamburger-btn");
+        let menu = document.querySelector(".header-nav");
+
+        let closeBtn = document.querySelector(".close-btn");
+
+        btn.addEventListener('click', function () {
+            menu.classList.add("on");
+        });
+        closeBtn.addEventListener('click', function () {
+            menu.classList.remove("on");
+        });
+
+    </script>
 
 </body>
 
