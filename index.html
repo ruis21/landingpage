@@ -15,9 +15,12 @@
 <body>
 
     <!-- header-section -->
-    <header class="header-sec">
+    <header class="header-sec" id="header">
         <div class="container header-con">
-            <h1 class="logo">로고</h1>
+            <a href="#header" class="logo">
+                <img src="./asset/image/logo.png" alt="로고 이미지">
+            </a>
+
             <!-- 햄버거 버튼. 모바일에서만 보이게 -->
             <button type="button" class="hamburger-btn">
                 <img src="./asset/image/menu-icon.png" alt="메뉴 버튼">
@@ -38,7 +41,7 @@
                         <a href="#event-sec">이벤트</a>
                     </li>
                     <li>
-                        <a href="#">문의하기</a>
+                        <a href="#contact-sec">문의하기</a>
                     </li>
                 </ul>
             </nav>
@@ -114,63 +117,65 @@
             <div class="container">
                 <div class="plan-title title">당신에게 딱 맞는 <span>요금제</span>를 찾아드립니다 !</div>
 
-                <div class="plan-card-wrap">
-                    <div class="plan-card">
-                        <div class="plan-card-subtitle01 pretendard">YOUNG (1GB+/통화기본)</div>
-                        <div class="plan-card-title">데이터 1GB</div>
-                        <div class="plan-card-subtitle02 pretendard">소진 시 1Mbps 무제한</div>
-                        <div class="plan-card-desc pretendard">
-                            <p>통화 &nbsp &nbsp 기본제공 </p>
-                            <p>문자 &nbsp &nbsp 기본제공 </p>
+                <div class="swiper mySwiper">
+                    <div class="plan-card-wrap swiper-wrapper">
+                        <div class="plan-card swiper-slide">
+                            <div class="plan-card-subtitle01 pretendard">YOUNG (1GB+/통화기본)</div>
+                            <div class="plan-card-title">데이터 1GB</div>
+                            <div class="plan-card-subtitle02 pretendard">소진 시 1Mbps 무제한</div>
+                            <div class="plan-card-desc pretendard">
+                                <p>통화 &nbsp &nbsp 기본제공 </p>
+                                <p>문자 &nbsp &nbsp 기본제공 </p>
+                            </div>
+                            <div class="plan-card-price">
+                                <span class="span01 pretendard">월 26,300원</span> &nbsp &nbsp
+                                <span class="span02-1">월 <span class="span02-2">10,900</span>원</span>
+                            </div>
+                            <hr>
+                            <div class="plan-card-desc merit pretendard">
+                                월 1만원대로 올리브영 1만원 혜택!
+                            </div>
                         </div>
-                        <div class="plan-card-price">
-                            <span class="span01 pretendard">월 26,300원</span> &nbsp &nbsp
-                            <span class="span02-1">월 <span class="span02-2">10,900</span>원</span>
+                        <div class="plan-card swiper-slide">
+                            <div class="plan-card-subtitle01 pretendard">YOUNG (71GB+/통화기본)</div>
+                            <div class="plan-card-title">11GB+일2GB</div>
+                            <div class="plan-card-subtitle02 pretendard">소진 시 3Mbps 무제한</div>
+                            <div class="plan-card-desc pretendard">
+                                <p>통화 &nbsp &nbsp 기본제공 </p>
+                                <p>문자 &nbsp &nbsp 기본제공 </p>
+                            </div>
+                            <div class="plan-card-price">
+                                <span class="span01 pretendard">월 50,300원</span> &nbsp &nbsp
+                                <span class="span02-1">월 <span class="span02-2">33,900</span>원</span>
+                            </div>
+                            <hr>
+                            <div class="plan-card-desc merit pretendard">
+                                월 3만원대로 올리브영 1만원 혜택!
+                            </div>
                         </div>
-                        <hr>
-                        <div class="plan-card-desc merit pretendard">
-                            월 1만원대로 올리브영 1만원 혜택!
+                        <div class="plan-card swiper-slide">
+                            <div class="plan-card-subtitle01 pretendard">YOUNG (100GB+/통화기본)</div>
+                            <div class="plan-card-title">데이터 100GB</div>
+                            <div class="plan-card-subtitle02 pretendard">소진 시 5Mbps 무제한</div>
+                            <div class="plan-card-desc pretendard">
+                                <p>통화 &nbsp &nbsp 기본제공 </p>
+                                <p>문자 &nbsp &nbsp 기본제공 </p>
+                            </div>
+                            <div class="plan-card-price">
+                                <span class="span01 pretendard">월 47,600원</span> &nbsp &nbsp
+                                <span class="span02-1">월 <span class="span02-2">39,200</span>원</span>
+                            </div>
+                            <hr>
+                            <div class="plan-card-desc merit pretendard">
+                                월 3만원대로 올리브영 1만원 혜택!
+                            </div>
                         </div>
-                    </div>
-                    <div class="plan-card">
-                        <div class="plan-card-subtitle01 pretendard">YOUNG (71GB+/통화기본)</div>
-                        <div class="plan-card-title">11GB+일2GB</div>
-                        <div class="plan-card-subtitle02 pretendard">소진 시 3Mbps 무제한</div>
-                        <div class="plan-card-desc pretendard">
-                            <p>통화 &nbsp &nbsp 기본제공 </p>
-                            <p>문자 &nbsp &nbsp 기본제공 </p>
-                        </div>
-                        <div class="plan-card-price">
-                            <span class="span01 pretendard">월 50,300원</span> &nbsp &nbsp
-                            <span class="span02-1">월 <span class="span02-2">33,900</span>원</span>
-                        </div>
-                        <hr>
-                        <div class="plan-card-desc merit pretendard">
-                            월 3만원대로 올리브영 1만원 혜택!
-                        </div>
-                    </div>
-                    <div class="plan-card">
-                        <div class="plan-card-subtitle01 pretendard">YOUNG (100GB+/통화기본)</div>
-                        <div class="plan-card-title">데이터 100GB</div>
-                        <div class="plan-card-subtitle02 pretendard">소진 시 5Mbps 무제한</div>
-                        <div class="plan-card-desc pretendard">
-                            <p>통화 &nbsp &nbsp 기본제공 </p>
-                            <p>문자 &nbsp &nbsp 기본제공 </p>
-                        </div>
-                        <div class="plan-card-price">
-                            <span class="span01 pretendard">월 47,600원</span> &nbsp &nbsp
-                            <span class="span02-1">월 <span class="span02-2">39,200</span>원</span>
-                        </div>
-                        <hr>
-                        <div class="plan-card-desc merit pretendard">
-                            월 3만원대로 올리브영 1만원 혜택!
-                        </div>
-                    </div>
 
-                    <button type="button" class="plan-previous-btn"></button>
-                    <button type="button" class="plan-next-btn"></button>
+                        <button type="button" class="plan-previous-btn"></button>
+                        <button type="button" class="plan-next-btn"></button>
 
 
+                    </div>
                 </div>
             </div>
             <div class="btn">
@@ -530,7 +535,7 @@
         </section>
 
         <!-- contact section -->
-        <section class="contact-sec">
+        <section class="contact-sec" id="contact-sec">
             <div class="container">
                 <div class="contact-wrap">
                     <div class="contact-left">
@@ -558,10 +563,38 @@
 
         </section>
 
-
     </main>
 
-    <footer></footer>
+    <!-- footer section -->
+    <footer class="footer pretendard">
+        <div class="container">
+            <h3>BBANGSAM</h3>
+            <ul class="list01">
+                <li>자주 묻는 질문</li>
+                <li>가이드</li>
+                <li>공지사항</li>
+                <li>채용안내</li>
+                <li>애드링크</li>
+            </ul>
+            <p>빵상텔레콤<br>
+                사업자등록번호 : 716-87-12345 | 대표 : 홍길동<br>
+                통신판매업 신고번호 : 2021-서울강남-02134<br>
+                주소 : 서울 서초구 강남대로 123 12층 빵상텔레콤 <br>
+                이메일 : help@bbangsangtelecom.com<br>
+            </p>
+            <ul class="list02">
+                <li>이용약관</li>
+                <li class="bold">개인정보처리방침</li>
+                <li>정보보호현황</li>
+            </ul>
+            <div class="sns-icon">
+                <img src="./asset/image/youtube_icon.png" alt="유투브 아이콘">
+                <img src="./asset/image/insta_icon.png" alt="인스타 아이콘">
+                <img src="./asset/image/facebook_icon.png" alt="페이스북 아이콘">
+                <img src="./asset/image/twitter_icon.png" alt="트위터 아이콘">
+            </div>
+        </div>
+    </footer>
 
     <script>
 
@@ -578,6 +611,8 @@
         });
 
     </script>
+
+
 
 </body>
 

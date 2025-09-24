@@ -186,6 +186,19 @@ body {
 }
 
 /* header 영역 */
+.header-sec {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.logo,
+.header-menu a {
+    text-decoration: none;
+    color: #2A3037;
+}
+
 .header-con {
     display: flex;
     justify-content: space-between;
@@ -308,6 +321,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 /* plan 영역 */
 .plan-sec {
@@ -1065,6 +1079,53 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* footer 영역 */
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: #2A3037;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.footer h3 {
+    font-size: 26px;
+}
+
+.list01 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    font-size: 16px;
+}
+
+.list02 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.sns-icon {
+    margin-top: 15px;
+    display: flex;
+    gap: 2%;
+    height: 22px;
+}
+
+
 
 @media (max-width: 1024px) {
 
