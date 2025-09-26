@@ -472,7 +472,7 @@ body {
 
 .discount-card-wrap {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     /* align-items: center; */
     /* width: 100%; */
     gap: 2%;
@@ -516,7 +516,7 @@ body {
 
 .discount-card-color ul {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .color01 {
@@ -629,7 +629,7 @@ body {
 
 }
 
-/* .discount-sec-btn {
+.discount-sec-btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -645,7 +645,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-} */
+}
 
 .discount-prev-btn {
     background-image: url("../image/left-arrow-white.png");
@@ -1281,7 +1281,8 @@ body {
     .discount-card-price span {
         font-size: 12px;
     }
-/* 
+
+    /* 
     .discount-prev-btn {
         left: 50px;
         transform: translate(-50%);
@@ -1302,6 +1303,10 @@ body {
     .process-card-bg {
         width: 120px;
         height: 120px;
+    }
+
+    .process-text {
+        font-size: 18px;
     }
 
     /* event 영역 */
@@ -1342,6 +1347,7 @@ body {
         top: 46px;
         z-index: -1;
     }
+
     .event-card02-title {
         font-size: 32px;
     }
