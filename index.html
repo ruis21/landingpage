@@ -175,7 +175,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-button-next plan-previous-btn"></div>
+                        <div class="swiper-button-next plan-prev-btn"></div>
                         <div class="swiper-button-prev plan-next-btn"></div>
 
 
@@ -318,8 +318,8 @@
 
                     </div>
 
-                    <button type="button" class="discount-previous-btn"></button>
-                    <button type="button" class="discount-next-btn"></button>
+                    <button type="button" class="discount-prev-btn .swiper-button-prev"></button>
+                    <button type="button" class="discount-next-btn .swiper-button-next"></button>
 
                 </div>
 
@@ -467,6 +467,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="btn">
                     <a href="#" class="event-sec-btn">
                         <p>이벤트 더보기</p>
@@ -525,7 +526,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="review-previous-btn"></button>
+                    <button type="button" class="review-prev-btn"></button>
                     <button type="button" class="review-next-btn"></button>
 
                 </div>
@@ -634,7 +635,7 @@
             breakpoints: {
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 10,
                 },
                 1024: {
                     slidesPerView: 3,
@@ -645,7 +646,7 @@
     </script>
 
     <script>
-        var swiper = new Swiper(".discount-wrap", {
+        var swiper = new Swiper(".discount-card-wrap", {
             slidesPerView: 1,
             spaceBetween: 10,
             loop: true,
