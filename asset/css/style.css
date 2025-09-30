@@ -616,7 +616,7 @@ body {
 
 .discount-card-price {
     font-family: 'pretendard';
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: #F95252;
 }
@@ -647,7 +647,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.discount-prev-btn {
+/* .discount-prev-btn {
     background-image: url("../image/left-arrow-white.png");
     background-color: transparent;
     background-position: cover;
@@ -669,7 +669,7 @@ body {
     position: absolute;
     right: -150px;
     transform: translate(-50%);
-}
+} */
 
 /* process 영역 */
 .process-sec {
@@ -718,6 +718,7 @@ body {
 
 .process-card-bg img {
     position: absolute;
+    width: 60px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -759,6 +760,14 @@ body {
     margin-top: 40px;
 }
 
+.event-card01 {
+    padding: 40px 60px;
+}
+
+.event-card01 img {
+    width: 150px;
+}
+
 .event-card01-1 {
     padding: 40px 50px 40px 80px;
     display: flex;
@@ -786,10 +795,6 @@ body {
     left: -25px;
     top: 64px;
     z-index: -1;
-}
-
-.event-card01-img {
-    width: 180px;
 }
 
 .event-card01-2 a,
@@ -830,7 +835,7 @@ body {
     width: 49%;
     height: 270px;
     background-color: #022B92;
-    padding: 40px 50px 40px 80px;
+    /* padding: 40px 50px 40px 80px; */
 }
 
 .event-card01-4 {
@@ -850,9 +855,6 @@ body {
     color: white;
 }
 
-.event-card01-4 img {
-    width: 280px;
-}
 
 .event-card02 {
     margin-top: 90px;
@@ -1263,11 +1265,11 @@ body {
     } */
 
     .discount-card-title {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .discount-title span {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     .discount-card-data ul>li {
@@ -1377,7 +1379,7 @@ body {
 
     /* commom 영역 */
     .title {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     /* kv 영역 */
@@ -1388,6 +1390,10 @@ body {
         width: 100%;
     }
 
+    .kv-text {
+        width: 90%;
+    }
+
     /* menu 영역 */
     .menu {
         width: 28%;
@@ -1396,13 +1402,31 @@ body {
     }
 
 
-    .discount-card-wrap {}
+    /* 
+    .discount-title span {
+        font-size: 32px;
+    }
 
     .discount-card {
         width: 35%;
+    } */
+
+    .process-wrap {
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 30px 0;
+    }
+
+    .process-card {
+        width: 24%;
     }
 
     .process-card-bg {
-        width: ;
+        width: 100px;
+        height: 100px;
+    }
+
+    .process-card-bg img {
+        width: 40px;
     }
 }
