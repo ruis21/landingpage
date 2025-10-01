@@ -176,6 +176,8 @@ body {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .title {
@@ -429,29 +431,36 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* .plan-prev-btn {
+.swiper-button-next,
+.swiper-button-prev {
+    color: #2A3037;
+    border: none;
+    background-color: transparent;
+}
+
+.plan-prev-btn {
     position: absolute;
-    background-image: url("../image/left-arrow-gray.png");
+    /* background-image: url("../image/left-arrow-gray.png");
     background-position: cover;
     background-color: transparent;
     width: 100px;
     height: 100px;
-    border: none;
-    left: -50px;
+    border: none; */
+    left: -200px;
     transform: translate(-50%);
 }
 
 .plan-next-btn {
-    background-image: url("../image/right-arrow-gray.png");
+    /* background-image: url("../image/right-arrow-gray.png");
     background-position: cover;
     background-color: transparent;
     width: 100px;
     height: 100px;
-    border: none;
+    border: none; */
     position: absolute;
-    right: -150px;
+    right: 150px;
     transform: translate(-50%);
-} */
+}
 
 /* discount 영역 */
 .discount-sec {
@@ -470,14 +479,7 @@ body {
     font-size: 42px;
 }
 
-.discount-card-wrap {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 100%; */
-    gap: 2%;
-    /* position: relative; */
-}
+
 
 .discount-card {
     display: flex;
@@ -647,38 +649,17 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* .discount-prev-btn {
-    background-image: url("../image/left-arrow-white.png");
-    background-color: transparent;
-    background-position: cover;
-    width: 100px;
-    height: 100px;
-    border: none;
-    position: absolute;
-    left: -50px;
-    transform: translate(-50%);
-}
-
-.discount-next-btn {
-    background-image: url("../image/right-arrow-white.png");
-    background-color: transparent;
-    background-position: cover;
-    width: 100px;
-    height: 100px;
-    border: none;
-    position: absolute;
-    right: -150px;
-    transform: translate(-50%);
-} */
-
 /* process 영역 */
 .process-sec {
     background-color: #ADD2E2;
     height: 633px;
 }
 
+.process-title {
+    padding: 120px 0 60px;
+}
+
 .process-wrap {
-    margin: 60px 0 120px;
     background-color: white;
     height: 300px;
     border-radius: 20px;
@@ -742,8 +723,11 @@ body {
     width: 100%;
 }
 
+.event-title {
+    padding: 120px 0 60px;
+}
+
 .event-card01-wrap {
-    margin-top: 60px;
     font-weight: 600;
 }
 
@@ -758,18 +742,18 @@ body {
 
 .event-card01-row02 {
     margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .event-card01 {
-    padding: 40px 60px;
+    padding: 50px 40px;
 }
 
 .event-card01 img {
-    width: 150px;
+    width: 130px;
 }
 
 .event-card01-1 {
-    padding: 40px 50px 40px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -782,7 +766,7 @@ body {
 .event-card01-text {
     color: white;
     font-size: 32px;
-    width: 50%;
+    width: 60%;
     position: relative;
     z-index: 0;
 }
@@ -803,7 +787,6 @@ body {
 }
 
 .event-card01-2 {
-    padding: 40px 20px 40px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -835,7 +818,6 @@ body {
     width: 49%;
     height: 270px;
     background-color: #022B92;
-    /* padding: 40px 50px 40px 80px; */
 }
 
 .event-card01-4 {
@@ -846,7 +828,6 @@ body {
     width: 49%;
     height: 270px;
     background-color: #DC4FBB;
-    padding: 40px 0 40px 40px;
 }
 
 .event-card01-4 a {
@@ -857,7 +838,6 @@ body {
 
 
 .event-card02 {
-    margin-top: 90px;
     background-color: #2A3037;
     height: 627px;
     border-radius: 20px;
@@ -915,10 +895,11 @@ body {
     gap: 5%;
 }
 
+
 .event-card02-desc span {
     background-color: #2A3037;
     border-radius: 30px;
-    width: 80px;
+    /* width: 80px; */
     height: 30px;
     color: white;
     padding: 7px;
@@ -953,21 +934,25 @@ body {
 /* review 영역 */
 .review-sec {
     background-color: #F3F5FF;
-    height: 824px;
+    /* height: 824px; */
 }
 
-.review-wrap {
-    margin-top: 60px;
+/* .review-wrap {
     display: flex;
     justify-content: space-between;
     position: relative;
     gap: 3%;
+} */
+
+.review-title {
+    padding: 120px 0 60px;
 }
 
 .review-subtitle {
     font-size: 22px;
     font-weight: 600;
     margin-top: 26px;
+    text-align: center;
 }
 
 .review-card,
@@ -977,9 +962,6 @@ body {
 
 }
 
-.review-subtitle {
-    text-align: center;
-}
 
 .review-desc {
     margin-top: 14px;
@@ -993,7 +975,7 @@ body {
     color: #3C5BBA;
 }
 
-.review-prev-btn {
+/* .review-prev-btn {
     background-image: url("../image/left-arrow-gray.png");
     background-color: transparent;
     background-position: cover;
@@ -1015,13 +997,12 @@ body {
     position: absolute;
     right: -150px;
     transform: translate(-50%, 100%)
-}
+} */
 
 .review-sec-btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 80px;
     text-decoration: none;
     color: #3C5BBA;
     background-color: transparent;
@@ -1029,10 +1010,11 @@ body {
     height: 50px;
     border: 2px solid #3C5BBA;
     border-radius: 50px;
-    position: absolute;
+    margin: 80px auto 0;
+    /* position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 /* contact 영역 */
@@ -1240,30 +1222,6 @@ body {
         gap: 2%;
     }
 
-    /* .plan-sec-btn {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 80px;
-        text-decoration: none;
-        color: white;
-        background-color: #516AEC;
-        width: 210px;
-        height: 50px;
-        border: none;
-        border-radius: 50px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    } */
-
-
-    /* discount 영역 */
-    /* .discount-card {
-        padding: 0 2%;
-    } */
-
     .discount-card-title {
         font-size: 22px;
     }
@@ -1284,23 +1242,7 @@ body {
         font-size: 12px;
     }
 
-    /* 
-    .discount-prev-btn {
-        left: 50px;
-        transform: translate(-50%);
-    }
-
-    .discount-next-btn {
-        right: -50px;
-        transform: translate(-50%);
-    } */
-
     /* process 영역 */
-    .process-wrap {
-        width: 96%;
-        margin: 60px 2% 120px;
-        justify-content: center;
-    }
 
     .process-card-bg {
         width: 120px;
@@ -1312,46 +1254,48 @@ body {
     }
 
     /* event 영역 */
-    .event-card01-wrap {
-        margin: 60px 2% 0 2%;
+
+    .event-sec {
+        height: 1650px;
     }
 
-    .event-card02 {
-        margin: 80px 2% 0 2%;
-    }
-
-    .event-card01-1,
-    .event-card01-2,
-    .event-card01-3,
-    .event-card01-4 {
+    .event-card01 {
         height: 230px;
-        gap: 10%;
-    }
-
-    .event-card01-text {
-        font-size: 32px;
+        gap: 5px;
     }
 
     .event-card01-img {
-        width: 150px;
+        width: 130px;
     }
 
     .event-card01-text {
-        font-size: 24px;
+        font-size: 26px;
+    }
+
+    .event-card01-row02 {
+        margin-top: 30px;
     }
 
     .box {
         width: 130px;
-        height: 20px;
+        height: 25px;
         background-color: #DC4FBB;
         position: absolute;
-        left: -20px;
-        top: 46px;
+        left: -16px;
+        top: 48px;
         z-index: -1;
     }
 
     .event-card02-title {
         font-size: 32px;
+    }
+
+    .event-card02-desc h3 {
+        font-size: 24px;
+    }
+
+    .event-card02 img {
+        width: 100%;
     }
 
     /* review 영역 */
@@ -1379,7 +1323,7 @@ body {
 
     /* commom 영역 */
     .title {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     /* kv 영역 */
@@ -1390,31 +1334,55 @@ body {
         width: 100%;
     }
 
+    .kv-wrap img {
+        width: 50%;
+    }
+
     .kv-text {
         width: 90%;
     }
 
     /* menu 영역 */
+
+    .menu-wrap {
+        margin: 20px;
+    }
+
     .menu {
         width: 28%;
         align-items: center;
         margin-top: 20px;
     }
 
-
-    /* 
-    .discount-title span {
-        font-size: 32px;
+    /* plan영역 */
+    .plan-sec {
+        height: 800px;
     }
 
-    .discount-card {
-        width: 35%;
-    } */
+    .plan-title {
+        padding: 80px 0 40px 0;
+    }
+
+
+    /* discount 영역 */
+    .discount-sec {
+        height: 800px;
+    }
+
+    .discount-title {
+        /* padding: 80px 0 40px 0; */
+    }
+
+    /* process영역 */
+    .process-title {
+        padding: 80px 0 40px;
+    }
 
     .process-wrap {
         flex-wrap: wrap;
         height: 100%;
         padding: 30px 0;
+        margin: 0 auto;
     }
 
     .process-card {
@@ -1429,4 +1397,58 @@ body {
     .process-card-bg img {
         width: 40px;
     }
+
+    /* event 영역 */
+    .event-sec {
+        height: 1500px;
+    }
+
+    .event-card01-wrap {
+        margin: 0;
+    }
+
+    .event-card01 {
+        height: 180px;
+        padding: 40px;
+    }
+
+    .event-card01-row02 {
+        margin-top: 20px;
+    }
+
+    .event-card01-text {
+        font-size: 18px;
+        width: 200px;
+    }
+
+    .box {
+        width: 100px;
+        height: 18px;
+        top: 32px;
+    }
+
+    .event-card01-text a {
+        font-size: 14px;
+    }
+
+    /* .event-card02 {
+        margin-top: 50px;
+    } */
+
+    .event-card02-title {
+        font-size: 24px;
+    }
+
+    .event-card02-subtitle {
+        font-size: 18px;
+    }
+
+    .event-card02-text {
+        padding: 40px 0;
+    }
+
+    .event-card02-desc h3 {
+        font-size: 20px;
+    }
+
 }
