@@ -176,8 +176,8 @@
                     <div class="swiper-button-prev plan-next-btn"></div>
                 </div>
 
-                <div class="btn">
-                    <a href="#" class="plan-sec-btn">
+                <div>
+                    <a href="#" class="plan-sec-btn btn">
                         <p>맞춤 요금제 찾기</p>
                         <p>➜</p>
                         <!-- <img src="./asset/image/arrow-right.png" alt="화살표 아이콘"> -->
@@ -321,8 +321,8 @@
                 </div>
             </div>
 
-            <div class="btn">
-                <a href="#" class="discount-sec-btn">
+            <div>
+                <a href="#" class="discount-sec-btn btn btn">
                     <p>특가 더보기</p>
                     <p>➜</p>
                     <!-- <img src="./asset/image/arrow-right2.png" alt="화살표 아이콘"> -->
@@ -469,8 +469,8 @@
 
                 </div>
 
-                <div class="btn">
-                    <a href="#" class="event-sec-btn">
+                <div>
+                    <a href="#" class="event-sec-btn btn">
                         <p>이벤트 더보기</p>
                         <p>➜</p>
                         <!-- <img src="./asset/image/arrow-right-gray.png" alt="화살표 아이콘"> -->
@@ -544,8 +544,8 @@
                     <button type="button" class="review-prev-btn swiper-button-prev"></button>
                     <button type="button" class="review-next-btn swiper-button-next"></button>
                 </div>
-                <div class="btn">
-                    <a href="#" class="review-sec-btn">
+                <div>
+                    <a href="#" class="review-sec-btn btn">
                         <p>고객 후기 더보기</p>
                         <p>➜</p>
                         <!-- <img src="./asset/image/arrow-right-blue.png" alt="화살표 아이콘"> -->
@@ -638,11 +638,24 @@
     </footer>
 
     <!-- Swiper JS -->
+    <script src="./asset/js/jquery-3.7.1.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
     <script src="./asset/js/swiper-bundle.min.js"></script>
     <script src="./asset/js/script.js"></script>
+
+<script>
+    $(function () {
+    $(".hamburger-btn").on("click", function () {
+        $(".header-nav").stop().slideDown(1000);
+    });
+    $(".close-btn").on("click", function () {
+        $(".header-nav").stop().slideUp(1000);
+    });
+});
+</script>
+
     <script>
 
         let btn = document.querySelector(".hamburger-btn");

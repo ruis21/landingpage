@@ -364,7 +364,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 32%; */
     height: 465px;
     background-color: white;
     border-radius: 20px;
@@ -420,20 +419,20 @@ a {
 .btn {
     font-size: 18px;
     font-weight: 500;
-}
-
-.plan-sec-btn {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    background-color: #516AEC;
-    border: none;
     border-radius: 50px;
     width: fit-content;
     margin: 60px auto 0;
     gap: 10px;
+}
+
+.plan-sec-btn {
+    color: white;
+    background-color: #516AEC;
+    border: none;
 }
 
 .plan-sec-btn:hover {
@@ -576,17 +575,9 @@ a {
 }
 
 .discount-sec-btn {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     color: white;
     background-color: transparent;
-    padding: 10px 20px;
     border: 2px solid white;
-    border-radius: 50px;
-    margin: 60px auto 0;
-    width: fit-content;
-    gap: 10px;
 }
 
 .discount-sec-btn:hover {
@@ -610,6 +601,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
 }
 
 .num {
@@ -790,6 +782,10 @@ a {
     gap: 20px;
 }
 
+.event-card02 >img {
+    width: 100%;
+}
+
 .event-card02 {
     width: 28%;
     gap: 4%;
@@ -811,24 +807,16 @@ a {
 }
 
 .event-card02-desc h3 {
-    margin-top: 15%;
+    margin-top: 20px;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
     color: #2A3037;
 }
 
 .event-sec-btn {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     color: #2A3037;
     background-color: transparent;
     border: 2px solid #2A3037;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin: 60px auto 0;
-    width: fit-content;
-    gap: 10px;
 }
 
 .event-sec-btn:hover {
@@ -890,17 +878,9 @@ a {
 }
 
 .review-sec-btn {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     color: #3C5BBA;
     background-color: transparent;
-    padding: 10px 20px;
     border: 2px solid #3C5BBA;
-    border-radius: 50px;
-    margin: 60px auto 0;
-    width: fit-content;
-    gap: 10px;
 }
 
 .review-sec-btn:hover {
@@ -1244,7 +1224,6 @@ a {
     .process-wrap {
         flex-wrap: wrap;
         height: 100%;
-        margin: 0 auto;
     }
 
     .process-card {
@@ -1301,7 +1280,7 @@ a {
         top: 38px;
         left: -14px;
     }
-    
+
     .event-card01-text a {
         font-size: 14px;
     }
