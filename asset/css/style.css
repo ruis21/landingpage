@@ -316,7 +316,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 65px 0 65px;
+    margin: 60px 0;
 }
 
 .menu-wrap p {
@@ -1301,11 +1301,7 @@ a {
         top: 38px;
         left: -14px;
     }
-
-    .event-card02-wrap {
-        margin: 20px;
-    }
-
+    
     .event-card01-text a {
         font-size: 14px;
     }
