@@ -247,7 +247,7 @@ a {
 }
 
 .header-menu li:hover {
-    text-decoration: underline;
+    color: #516AEC;
 }
 
 .hamburger-btn {
@@ -498,6 +498,15 @@ a {
     text-align: center;
 }
 
+.discount-card-logo img {
+    vertical-align: middle;
+}
+
+.discount-card:hover>img {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 .discount-card-color ul {
     display: flex;
     gap: 8px;
@@ -551,7 +560,6 @@ a {
 .color12 {
     background-color: #E2E2E2;
     border: 0.5px solid #464545;
-
 }
 
 .color13 {
@@ -685,9 +693,13 @@ a {
     height: 270px;
 }
 
-
 .event-card01 img {
     width: 40%;
+}
+
+.event-card01:hover img {
+    transform: scale(1.15);
+    transition: 0.3s ease-in-out;
 }
 
 .event-card01-1 {
@@ -771,7 +783,8 @@ a {
     font-size: 22px;
     color: white;
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
+    margin-top: 5px;
 }
 
 .event-card02-wrap {
@@ -781,7 +794,7 @@ a {
     gap: 20px;
 }
 
-.event-card02 >img {
+.event-card02>img {
     width: 100%;
 }
 
@@ -849,11 +862,12 @@ a {
 .review-img img {
     width: 100%;
     height: 100%;
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .review-img:hover img {
     transform: scale(1.1);
+    overflow: hidden;
 }
 
 .review-desc p {
@@ -959,7 +973,7 @@ a {
     line-height: 1.4;
 }
 
-.footer h3 img{
+.footer h3 img {
     width: 139px;
 }
 
@@ -1169,7 +1183,7 @@ a {
 
     /* commom 영역 */
     .title {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     /* kv 영역 */
@@ -1183,6 +1197,10 @@ a {
     .kv-wrap img {
         width: 45%;
         margin-right: 50%;
+    }
+
+    .kv-title {
+        font-size: 36px;
     }
 
     .kv-text {
@@ -1203,6 +1221,10 @@ a {
     .menu-img {
         width: 100px;
         height: 100px;
+    }
+
+    .menu p {
+        font-size: 16px;
     }
 
     /* discount 영역 */
@@ -1227,6 +1249,10 @@ a {
 
     .process-card-bg img {
         width: 40px;
+    }
+
+    .process-text {
+        font-size: 16px;
     }
 
     /* event 영역 */
