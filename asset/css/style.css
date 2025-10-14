@@ -939,7 +939,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5%;
 }
 
 .circle01,
@@ -949,6 +948,7 @@ a {
     border-radius: 50%;
     background-color: #2A3037;
     position: relative;
+    margin-right: 20px;
 }
 
 .circle-title {
@@ -1200,11 +1200,12 @@ a {
         padding: 60px 0;
         height: 100%;
         width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .kv-wrap img {
         width: 45%;
-        margin-right: 50%;
     }
 
     .kv-title {
