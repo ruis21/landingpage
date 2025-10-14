@@ -167,6 +167,7 @@ body {
     font-family: 'Paperozi';
     line-height: 1.2;
     color: #2A3037;
+    background-color: white;
 }
 
 .pretendard {
@@ -244,6 +245,7 @@ a {
 
 .header-menu li a {
     font-size: 18px;
+    font-weight: 600;
 }
 
 .header-menu li:hover {
@@ -421,7 +423,7 @@ a {
 }
 
 .span02-2 {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .merit {
@@ -762,7 +764,7 @@ a {
 }
 
 .event-card02-text {
-    padding-bottom: 60px;
+    padding: 0 10px 60px;
 }
 
 .event-card02-text span {
@@ -780,7 +782,7 @@ a {
 }
 
 .event-card02-subtitle {
-    font-size: 22px;
+    font-size: 20px;
     color: white;
     text-align: center;
     font-weight: 200;
@@ -825,7 +827,7 @@ a {
 
 .event-card02-desc h3 {
     margin-top: 20px;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
     color: #2A3037;
 }
@@ -886,6 +888,7 @@ a {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    color: #;
 }
 
 .review-desc span {
@@ -1138,7 +1141,7 @@ a {
     }
 
     .event-card01-text {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .event-card01-row02 {
@@ -1157,10 +1160,6 @@ a {
 
     .event-card02-title {
         font-size: 32px;
-    }
-
-    .event-card02-desc h3 {
-        font-size: 24px;
     }
 
     .event-card02 img {
@@ -1188,7 +1187,7 @@ a {
 
     /* commom 영역 */
     .title {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .btn {
@@ -1212,12 +1211,17 @@ a {
         font-size: 36px;
     }
 
+    .kv-subtitle {
+        font-size: 18px;
+    }
+
     .kv-text {
         width: 90%;
     }
 
     .kv-desc {
         margin: 10px 0 30px;
+        font-size: 18px;
     }
 
     /* menu 영역 */
@@ -1305,7 +1309,7 @@ a {
     }
 
     .event-card01-text {
-        font-size: 20px;
+        font-size: 22px;
         width: 60%;
     }
 
@@ -1340,7 +1344,7 @@ a {
     }
 
     .event-card02-desc h3 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     /* contact 영역 */
