@@ -811,6 +811,11 @@ a {
     padding: 20px;
 }
 
+.event-card02:hover img {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 .event-card02-desc span {
     background-color: #2A3037;
     border-radius: 30px;
