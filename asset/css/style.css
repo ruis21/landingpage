@@ -1191,6 +1191,10 @@ a {
         font-size: 26px;
     }
 
+    .btn {
+        font-size: 16px;
+    }
+
     /* kv 영역 */
     .kv-wrap {
         flex-direction: column-reverse;
@@ -1231,6 +1235,16 @@ a {
     .menu p {
         font-size: 16px;
     }
+
+    /* plan 영역 */
+    .plan-card-title {
+        font-size: 24px;
+    }
+
+    .span02-2 {
+        font-size: 24px;
+    }
+
 
     /* discount 영역 */
     .discount-title span {
