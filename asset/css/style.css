@@ -651,6 +651,7 @@ a {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
+    gap: 20px 0;
 }
 
 .num {
