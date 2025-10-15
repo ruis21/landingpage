@@ -521,7 +521,7 @@ a {
 
 .discount-card-title {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .discount-card-data ul {
@@ -1100,18 +1100,9 @@ a {
         height: 16px;
     }
 
-    /* commom 영역 */
-    .title {
-        font-size: 36px;
-    }
-
     /* kv 영역 */
     .kv-wrap {
         padding: 2%;
-    }
-
-    .kv-title {
-        font-size: 46px;
     }
 
     .kv-subtitle {
