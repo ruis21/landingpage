@@ -229,6 +229,10 @@ a {
     background-color: white;
 }
 
+.header-nav {
+    /* display: flex; */
+}
+
 .header-con {
     display: flex;
     justify-content: space-between;
@@ -252,13 +256,43 @@ a {
     color: #516AEC;
 }
 
+/* .hamburger-btn {
+    display: none;
+} */
+
 .hamburger-btn {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    padding: 0;
     display: none;
 }
 
-.close-btn {
-    display: none;
+.hamburger-btn .line {
+    height: 3px;
+    background: #2A3037;
+    transition: 0.3s;
 }
+
+.hamburger-btn.active .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-btn.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active .line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* .close-btn {
+    display: none;
+} */
 
 /* kv 영역 */
 .kv-sec {
@@ -602,7 +636,6 @@ a {
     transition: all 0.3s ease;
 }
 
-
 /* process 영역 */
 .process-sec {
     background-color: #ADD2E2;
@@ -666,8 +699,6 @@ a {
     font-size: 20px;
 }
 
-
-
 /* event 영역 */
 .event-sec {
     width: 100%;
@@ -683,7 +714,6 @@ a {
     display: flex;
     align-items: center;
     gap: 3.2%;
-    /* width: 100%; */
     line-height: 1.5;
 }
 
@@ -743,7 +773,6 @@ a {
     background-color: #8B5FE0;
 }
 
-
 .event-card01-2 span {
     color: #D6FF20;
 }
@@ -761,7 +790,6 @@ a {
 .event-card01-4 {
     background-color: #DC4FBB;
 }
-
 
 .event-card02-sec {
     background-color: #2A3037;
@@ -913,7 +941,6 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-
 /* contact 영역 */
 
 .contact-wrap {
@@ -947,8 +974,7 @@ a {
     align-items: center;
 }
 
-.circle01,
-.circle02 {
+.circle {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -1024,10 +1050,14 @@ a {
         padding: 0 15px;
     }
 
-    .hamburger-btn {
+    /* .hamburger-btn {
         display: block;
         border: none;
         background-color: transparent;
+    } */
+
+    .hamburger-btn {
+        display: flex;
     }
 
     .header-nav {
@@ -1041,6 +1071,7 @@ a {
         font-size: 20px;
         font-weight: 600;
         line-height: 2.0;
+        z-index: 10;
     }
 
     .header-nav.on {
@@ -1347,12 +1378,21 @@ a {
     }
 
     /* contact 영역 */
+    .contact-left {
+        text-align: center;
+    }
+
     .contact-left h2 {
         font-size: 36px;
     }
 
     .contact-right {
         margin-top: 40px;
+    }
+
+    .circle {
+        width: 160px;
+        height: 160px;
     }
 
     .circle-title {

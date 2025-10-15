@@ -1,12 +1,15 @@
 $(function () {
 
     $(".hamburger-btn").on("click", function () {
-        $(".header-nav").stop().slideDown();
+        $(".header-nav").stop().slideToggle();
+        $(this).toggleClass("active");
     });
 
-    $(".close-btn").on("click", function () {
-        $(".header-nav").stop().slideUp();
-    });
+    // $(".close-btn").on("click", function () {
+    //     $(".header-nav").stop().slideUp();
+    //     $(".close-btn").hide();
+    //     $(".hamburger-btn").show();
+    // });
 
 
     var planSwiper = new Swiper(".plan-wrap", {
