@@ -1,25 +1,15 @@
-// $(function () {
-//     $(".hamburger-btn").on("click", function () {
-//         $(".header-nav").stop().slideDown();
-//     });
-//     $(".close-btn").on("click", function () {
-//         $(".header-nav").stop().slideUp();
-//     });
-
-// });
-
 $(function () {
 
     /* 햄버거 메뉴 열기 */
     $(".hamburger-btn").on("click", function () {
         $(".header-nav").stop().slideDown();
-        $("body").css("overflow", "hidden"); // 스크롤 잠금
+        // $("body").css("overflow", "hidden"); // 스크롤 잠금
     });
 
     /* 햄버거 메뉴 닫기 */
     $(".close-btn").on("click", function () {
         $(".header-nav").stop().slideUp();
-        $("body").css("overflow", "auto"); // 스크롤 복원
+        // $("body").css("overflow", "auto"); // 스크롤 복원
     });
 
 

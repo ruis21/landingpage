@@ -183,7 +183,7 @@ body {
 }
 
 .title {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
     text-align: center;
     padding-bottom: 60px;
@@ -299,7 +299,7 @@ a {
 }
 
 .kv-subtitle span {
-    color: #3C5BBA;
+    color: #516AEC;
 }
 
 .kv-title {
@@ -316,13 +316,11 @@ a {
 }
 
 .kv-btn {
-    width: 170px;
-    height: 50px;
     background-color: #092D77;
     border-radius: 30px;
     color: white;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 15px 25px;
 }
 
 /* menu 영역 */
@@ -362,6 +360,11 @@ a {
     width: 50px;
 }
 
+.menu-img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 
 /* plan 영역 */
 .plan-sec {
@@ -384,13 +387,18 @@ a {
     gap: 2%;
 }
 
+.plan-card:hover {
+    border: 1.5px solid #516AEC;
+    transition: 0.1s ease-in-out;
+}
+
 .plan-card-subtitle01 {
     font-size: 18px;
     font-weight: 500;
 }
 
 .plan-card-title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
 }
 
@@ -461,7 +469,7 @@ a {
 }
 
 .discount-title span {
-    font-size: 42px;
+    font-size: 38px;
 }
 
 .discount-card {
@@ -478,8 +486,8 @@ a {
 
 
 .discount-card-title {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .discount-card-data ul {
@@ -490,14 +498,13 @@ a {
 
 .discount-card-data ul>li {
     font-family: 'pretendard';
-    font-weight: 300;
-    width: 60px;
-    height: 24px;
+    font-weight: 400;
     border-radius: 4px;
     color: white;
     background-color: #516AEC;
-    padding: 3px 3px;
+    padding: 4px 6px;
     text-align: center;
+    font-size: 14px;
 }
 
 .discount-card-logo img {
@@ -571,7 +578,7 @@ a {
 
 .discount-card-price {
     font-family: 'pretendard';
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     color: #F95252;
 }
@@ -775,17 +782,17 @@ a {
 }
 
 .event-card02-title {
-    font-size: 36px;
+    font-size: 32px;
     color: white;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .event-card02-subtitle {
     font-size: 20px;
     color: white;
     text-align: center;
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 5px;
 }
 
@@ -827,7 +834,7 @@ a {
 
 .event-card02-desc h3 {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     color: #2A3037;
 }
@@ -888,21 +895,20 @@ a {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    color: #;
 }
 
 .review-desc span {
-    color: #3C5BBA;
+    color: #516AEC;
 }
 
 .review-sec-btn {
-    color: #3C5BBA;
+    color: #516AEC;
     background-color: transparent;
-    border: 2px solid #3C5BBA;
+    border: 2px solid #516AEC;
 }
 
 .review-sec-btn:hover {
-    background-color: #3C5BBA;
+    background-color: #516AEC;
     color: white;
     transition: all 0.3s ease-in-out;
 }
@@ -1091,10 +1097,6 @@ a {
     }
 
     /* plan 영역 */
-    .plan-card-title {
-        font-size: 28px;
-    }
-
     .plan-card-wrap {
         position: relative;
     }
@@ -1107,12 +1109,8 @@ a {
         font-size: 38px;
     }
 
-    .discount-card-data ul>li {
-        font-size: 15px;
-    }
-
     .discount-card-price {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .discount-card-price span {
@@ -1345,7 +1343,7 @@ a {
     }
 
     .event-card02-desc h3 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     /* contact 영역 */
