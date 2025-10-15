@@ -898,11 +898,14 @@ a {
     width: 100%;
 }
 
+
 .review-img {
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .review-img img {
+    aspect-ratio: 1/1;
     width: 100%;
     height: 100%;
     transition: 0.3s ease-in-out;
