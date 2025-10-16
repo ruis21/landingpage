@@ -252,9 +252,6 @@ a {
     color: #516AEC;
 }
 
-/* .hamburger-btn {
-    display: none;
-} */
 
 .hamburger-btn {
     width: 30px;
@@ -286,9 +283,6 @@ a {
     transform: translateY(-9px) rotate(-45deg);
 }
 
-/* .close-btn {
-    display: none;
-} */
 
 /* kv 영역 */
 .kv-sec {
@@ -888,8 +882,8 @@ a {
     background-color: #F3F5FF;
 }
 
-.swiper-wrapper {
-    padding-bottom: 20px;
+.review-wrap {
+    overflow: visible;
 }
 
 .review-subtitle {
@@ -952,6 +946,7 @@ a {
 
 .swiper-pagination {
     position: static;
+    margin-top: 30px;
 }
 
 
