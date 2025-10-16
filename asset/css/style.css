@@ -999,7 +999,6 @@ a {
     border-radius: 50%;
     background-color: #2A3037;
     position: relative;
-    /* margin-right: 20px; */
 }
 
 .circle-title {
@@ -1073,12 +1072,6 @@ a {
         padding: 0 15px;
     }
 
-    /* .hamburger-btn {
-        display: block;
-        border: none;
-        background-color: transparent;
-    } */
-
     .hamburger-btn {
         display: flex;
     }
@@ -1104,19 +1097,6 @@ a {
     .header-menu-list {
         flex-direction: column;
         padding: 100px 0;
-    }
-
-    .close-btn {
-        display: block;
-        background-color: transparent;
-        border: none;
-        position: fixed;
-        right: 10%;
-    }
-
-    .close-btn img {
-        width: 16px;
-        height: 16px;
     }
 
     /* kv 영역 */
