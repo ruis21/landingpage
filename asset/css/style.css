@@ -229,10 +229,6 @@ a {
     background-color: white;
 }
 
-.header-nav {
-    /* display: flex; */
-}
-
 .header-con {
     display: flex;
     justify-content: space-between;
