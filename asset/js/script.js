@@ -5,11 +5,9 @@ $(function () {
         $(this).toggleClass("active");
     });
 
-    // $(".close-btn").on("click", function () {
-    //     $(".header-nav").stop().slideUp();
-    //     $(".close-btn").hide();
-    //     $(".hamburger-btn").show();
-    // });
+    $(".header-menu").on("click", function () {
+        $(".header-nav").stop().slideUp();
+    });
 
 
     var planSwiper = new Swiper(".plan-wrap", {
@@ -41,18 +39,21 @@ $(function () {
         }
     });
 
-
-    var reviewSwiper = new Swiper(".review-wrap", {
-        slidesPerView: 2,
+    var swiper = new Swiper(".review-wrap", {
+        slidesPerView: 1.3,
         spaceBetween: 20,
         loop: true,
-        navigation: {
-            nextEl: ".review-next-btn",
-            prevEl: ".review-prev-btn",
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
         breakpoints: {
             768: { slidesPerView: 3, spaceBetween: 15 },
-            1024: { slidesPerView: 5, spaceBetween: 20 }
+            1024: { slidesPerView: 5, spaceBetween: 20 },
         }
     });
 
