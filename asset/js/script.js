@@ -9,6 +9,12 @@ $(function () {
         $(".header-nav").stop().slideUp();
     });
 
+    $(window).on("load", function () {
+        setTimeout(() => {
+            AOS.refresh();
+        }, 300);
+    });
+
 
     var planSwiper = new Swiper(".plan-wrap", {
         slidesPerView: 1,

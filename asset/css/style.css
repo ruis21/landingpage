@@ -305,6 +305,26 @@ a {
     width: 35%;
 }
 
+.kv-img-floating {
+    animation: floatUpDown 3.2s ease-in-out infinite;
+    will-change: transform;
+    filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.15));
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(0.4deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
 .kv-text {
     width: 65%;
 }
@@ -882,10 +902,6 @@ a {
     background-color: #F3F5FF;
 }
 
-.review-wrap {
-    overflow: visible;
-}
-
 .review-subtitle {
     font-size: 22px;
     font-weight: 600;
@@ -946,7 +962,7 @@ a {
 
 .swiper-pagination {
     position: static;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 
@@ -994,6 +1010,12 @@ a {
     border-radius: 50%;
     background-color: #2A3037;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .circle-title {
@@ -1009,6 +1031,24 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.floating {
+    animation: floating 2.5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+
+    50% {
+        transform: translateY(-8px) scale(1.02);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+    }
 }
 
 /* footer 영역 */
@@ -1108,7 +1148,7 @@ a {
     }
 
     .kv-btn {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /* menu 영역 */
@@ -1248,6 +1288,10 @@ a {
     .kv-desc {
         margin: 10px 0 30px;
         font-size: 18px;
+    }
+
+    .kv-btn {
+        font-size: 16px;
     }
 
     /* menu 영역 */
