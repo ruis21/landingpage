@@ -365,6 +365,7 @@ a {
     color: white;
     font-size: 20px;
     padding: 15px 25px;
+    display: inline-block;
 }
 
 /* menu 영역 */
@@ -1331,7 +1332,7 @@ a {
     }
 
     .process-card {
-        /* width: 24%; */
+        width: 24%;
         min-width: 120px;
     }
 
