@@ -6,7 +6,9 @@ $(function () {
     });
 
     $(".header-menu").on("click", function () {
-        $(".header-nav").stop().slideUp();
+        if ($(window).width() <= 1024) {
+            $(".header-nav").stop().slideUp();
+        }
     });
 
     $(window).on("load", function () {
