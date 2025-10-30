@@ -1,0 +1,1487 @@
+@import url(./reset.min.css);
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Pretendard-Black'),
+        url("../font/Pretendard-Black.ttf") format('truetype'),
+        url("../font/Pretendard-Black.woff2") format('woff2'),
+        url("../font/Pretendard-Black.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Pretendard-ExtraBold'),
+        url("../font/Pretendard-ExtraBold.ttf") format('truetype'),
+        url("../font/Pretendard-ExtraBold.woff2") format('woff2'),
+        url("../font/Pretendard-ExtraBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Pretendard-Bold'),
+        url("../font/Pretendard-Bold.ttf") format('truetype'),
+        url("../font/Pretendard-Bold.woff2") format('woff2') url("../font/Pretendard-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Pretendard-SemiBold'),
+        url("../font/Pretendard-SemiBold.ttf") format('truetype'),
+        url("../font/Pretendard-SemiBold.woff2") format('woff2'),
+        url("../font/Pretendard-SemiBold.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Pretendard-Medium'),
+        url("../font/Pretendard-Medium.ttf") format('truetype'),
+        url("../font/Pretendard-Medium.woff2") format("woff2"),
+        url("../font/Pretendard-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pretendard-Regular'),
+        url("../font/Pretendard-Regular.ttf") format('truetype'),
+        url("../font/Pretendard-Regular.woff2") format('woff2'),
+        url("../font/Pretendard-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Pretendard-Light'),
+        url("../font/Pretendard-Light.ttf") format('truetype'),
+        url("../font/Pretendard-Light.woff2") format('woff2'),
+        url("../font/Pretendard-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Pretendard-ExtraLight'),
+        url("../font/Pretendard-ExtraLight.ttf") format('truetype'),
+        url("../font/Pretendard-ExtraLight.woff2") format('woff2'),
+        url("../font/Pretendard-ExtraLight.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Pretendard-Thin'),
+        url("../font/Pretendard-Thin.ttf") format('truetype'),
+        url("../font/Pretendard-Thin.woff2") format('woff2'),
+        url("../font/Pretendard-Thin.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+
+/* common 영역 */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Paperozi';
+    line-height: 1.2;
+    color: #2A3037;
+    background-color: white;
+}
+
+.pretendard {
+    font-family: 'Pretendard';
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sec {
+    padding: 120px 0;
+}
+
+.color {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 60px auto 0;
+    gap: 10px;
+}
+
+/* header 영역 */
+.header-sec {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.header-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 80px;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.header-menu-list li a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-menu-list li:hover {
+    color: #516AEC;
+}
+
+
+.hamburger-btn {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    padding: 0;
+    display: none;
+}
+
+.hamburger-btn .line {
+    height: 3px;
+    background: #2A3037;
+    transition: 0.3s;
+}
+
+.hamburger-btn.active .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-btn.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active .line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+/* kv 영역 */
+.kv-sec {
+    background-image: url("/wp-content/uploads/2025/10/main-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.kv-wrap {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%
+}
+
+.kv-wrap img {
+    width: 35%;
+}
+
+.kv-img-floating {
+    animation: floatUpDown 3.2s ease-in-out infinite;
+    will-change: transform;
+    filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.15));
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(0.4deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.kv-text {
+    width: 65%;
+}
+
+.kv-text a:hover {
+    background-color: #516AEC;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.kv-subtitle {
+    font-size: 24px;
+    line-height: 1.7;
+    font-family: 'pretendard';
+    font-weight: 500;
+}
+
+.kv-subtitle span {
+    color: #516AEC;
+}
+
+.kv-title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.kv-desc {
+    font-size: 22px;
+    margin-top: 10px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.kv-btn {
+    background-color: #092D77;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+/* menu 영역 */
+
+.menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0;
+    /* width: 100%; */
+}
+
+.menu-wrap p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.menu-img {
+    background-color: #F3F5FF;
+    border-radius: 50%;
+    width: 142px;
+    height: 142px;
+    position: relative;
+}
+
+.menu-img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+}
+
+.menu-img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* plan 영역 */
+.plan-sec {
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+.plan-title span {
+    color: #516AEC;
+}
+
+.br {
+    display: none;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 465px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    gap: 2%;
+}
+
+.plan-card:hover {
+    border: 1.5px solid #516AEC;
+    transition: 0.1s ease-in-out;
+}
+
+.plan-card-subtitle01 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.plan-card-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.plan-card-subtitle02 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #516AEC;
+}
+
+.plan-card-desc {
+    padding: 20px 0;
+}
+
+.plan-card-desc p {
+    padding-top: 20px;
+}
+
+.plan-card-price {
+    margin-top: 20px;
+}
+
+.span01 {
+    text-decoration: line-through;
+    color: #727272;
+}
+
+.span02-1 {
+    color: #F95252;
+    font-weight: 600;
+}
+
+.span02-2 {
+    font-size: 28px;
+}
+
+.merit {
+    color: #727272;
+}
+
+.plan-sec-btn {
+    color: white;
+    background-color: #516AEC;
+    border: none;
+}
+
+.plan-sec-btn:hover {
+    background-color: #022B92;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #2A3037;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* discount 영역 */
+.discount-sec {
+    background-color: #2A3037;
+    width: 100%;
+}
+
+.discount-title {
+    color: white;
+}
+
+.discount-title span {
+    font-size: 38px;
+}
+
+.discount-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 423px;
+    background-color: white;
+    border-radius: 20px;
+    gap: 2%;
+}
+
+
+.discount-card-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.discount-card-data ul {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.discount-card-data ul>li {
+    font-family: 'pretendard';
+    font-weight: 400;
+    border-radius: 4px;
+    color: white;
+    background-color: #516AEC;
+    padding: 4px 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.discount-card-logo img {
+    vertical-align: middle;
+}
+
+.discount-card:hover>img {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.discount-card-color ul {
+    display: flex;
+    gap: 8px;
+}
+
+.color01 {
+    background-color: #3C5BBA;
+}
+
+.color02 {
+    background-color: #494A4D;
+}
+
+.color03 {
+    background-color: #B0B7B9;
+}
+
+.color04 {
+    background-color: #EE6779;
+}
+
+.color05 {
+    background-color: #494949;
+}
+
+.color06 {
+    background-color: #F8F8F6;
+    border: 0.5px solid #464545;
+}
+
+.color07 {
+    background-color: #E89ACC;
+}
+
+.color08 {
+    background-color: #A2CAC9;
+}
+
+.color09 {
+    background-color: #8296DF;
+}
+
+.color10 {
+    background-color: #464545;
+}
+
+.color11 {
+    background-color: #8B8781;
+}
+
+.color12 {
+    background-color: #E2E2E2;
+    border: 0.5px solid #464545;
+}
+
+.color13 {
+    background-color: #BCAC9F;
+}
+
+
+.discount-card-price {
+    font-family: 'pretendard';
+    font-size: 24px;
+    font-weight: 600;
+    color: #F95252;
+}
+
+.discount-card-price span {
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 14px;
+    color: #879098;
+}
+
+.discount-sec-btn {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.discount-sec-btn:hover {
+    background-color: #516AEC;
+    border: 2px solid #516AEC;
+    transition: all 0.3s ease;
+}
+
+/* process 영역 */
+.process-sec {
+    background-color: #ADD2E2;
+}
+
+.process-wrap {
+    background-color: white;
+    padding: 50px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px 0;
+}
+
+.num {
+    /* position: sticky; */
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #516AEC;
+    padding: 2px;
+    margin-bottom: -15px;
+    z-index: 1;
+}
+
+.process-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.process-card-bg {
+    background-color: #F4F6F8;
+    border-radius: 50%;
+    width: 142px;
+    height: 142px;
+    position: relative;
+}
+
+.process-card-bg img {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.process-arrow {
+    width: 70px;
+    height: 70px;
+}
+
+.process-text {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* event 영역 */
+.event-sec {
+    width: 100%;
+    height: 100%;
+}
+
+.event-card01-wrap {
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 3.2%;
+    line-height: 1.5;
+}
+
+.event-card01-row02 {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.event-card01 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 49%;
+    height: 270px;
+}
+
+.event-card01 img {
+    width: 40%;
+}
+
+.event-card01:hover img {
+    transform: scale(1.15);
+    transition: 0.3s ease-in-out;
+}
+
+.event-card01-1 {
+    background-color: #516AEC;
+}
+
+.event-card01-text {
+    color: white;
+    font-size: 32px;
+    width: 60%;
+    position: relative;
+    z-index: 0;
+    width: 60%;
+}
+
+.box {
+    width: 170px;
+    height: 25px;
+    background-color: #DC4FBB;
+    position: absolute;
+    left: -25px;
+    top: 64px;
+    z-index: -1;
+}
+
+.event-card01-2 a,
+.event-card01-4 a {
+    font-weight: 400;
+}
+
+.event-card01-2 {
+    background-color: #8B5FE0;
+}
+
+.event-card01-2 span {
+    color: #D6FF20;
+}
+
+.event-card01-text a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: white;
+}
+
+.event-card01-3 {
+    background-color: #022B92;
+}
+
+.event-card01-4 {
+    background-color: #DC4FBB;
+}
+
+.event-card02-sec {
+    background-color: #2A3037;
+    height: 100%;
+    border-radius: 20px;
+    padding: 60px 0;
+}
+
+.event-card02-text {
+    padding-bottom: 60px;
+}
+
+.event-card02-text span {
+    background-image: linear-gradient(to right, #00FFEA, #DD00FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.event-card02-title {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.event-card02-subtitle {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.event-card02-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.event-card02>img {
+    width: 100%;
+}
+
+.event-card02 {
+    width: 28%;
+    gap: 4%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.event-card02:hover img {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.event-card02-desc span {
+    background-color: #2A3037;
+    border-radius: 30px;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.event-card02-desc h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #2A3037;
+}
+
+.event-sec-btn {
+    color: #2A3037;
+    background-color: transparent;
+    border: 2px solid #2A3037;
+}
+
+.event-sec-btn:hover {
+    background-color: #2A3037;
+    color: white;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* review 영역 */
+.review-sec {
+    background-color: #F3F5FF;
+}
+
+.review-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 26px;
+}
+
+.review-card img,
+.review-subtitle {
+    width: 100%;
+}
+
+
+.review-img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.review-img img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.review-img:hover img {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.review-desc p {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    padding: 0 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.review-desc span {
+    color: #516AEC;
+}
+
+.review-sec-btn {
+    color: #516AEC;
+    background-color: transparent;
+    border: 2px solid #516AEC;
+}
+
+.review-sec-btn:hover {
+    background-color: #516AEC;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 20px;
+}
+
+
+/* contact 영역 */
+
+.contact-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-left p {
+    font-size: 24px;
+}
+
+.contact-left h2 {
+    font-size: 52px;
+    color: #516AEC;
+    font-weight: 600;
+}
+
+.contact-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-right img {
+    width: 100%;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #2A3037;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.circle-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.circle01-wrap,
+.circle02-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.floating {
+    animation: floating 2.5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+
+    50% {
+        transform: translateY(-8px) scale(1.02);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/* footer 영역 */
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: #2A3037;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.footer h3 img {
+    width: 139px;
+}
+
+.list01 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    font-size: 16px;
+}
+
+.list02 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.sns-icon {
+    margin-top: 15px;
+    display: flex;
+    gap: 5%;
+}
+
+.sns-icon img {
+    width: 32px;
+}
+
+@media (max-width: 1024px) {
+
+    /* header 영역 */
+    .header-con {
+        padding: 0 15px;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        display: none;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 2.0;
+        z-index: 10;
+        border-top: 1px solid #D9D9D9;
+    }
+
+    .header-nav.on {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .header-menu-list {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 80px);
+    }
+
+    /* kv 영역 */
+    .kv-wrap {
+        padding: 2%;
+    }
+
+    .kv-subtitle {
+        font-size: 20px;
+    }
+
+    .kv-desc {
+        font-size: 20px;
+    }
+
+    .kv-btn {
+        font-size: 18px;
+    }
+
+    /* menu 영역 */
+    .menu-wrap {
+        padding: 0 2%;
+    }
+
+    .menu {
+        flex-basis: calc(100% / 3);
+    }
+
+    /* plan 영역 */
+    .plan-card-wrap {
+        position: relative;
+    }
+
+    .discount-card-title {
+        font-size: 22px;
+    }
+
+    .discount-title span {
+        font-size: 38px;
+    }
+
+    .discount-card-price {
+        font-size: 22px;
+    }
+
+    .discount-card-price span {
+        font-size: 12px;
+    }
+
+    /* process 영역 */
+
+    .process-card {
+        flex-basis: calc(100% / 5);
+    }
+
+    .process-card-bg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .process-text {
+        font-size: 18px;
+    }
+
+    /* event 영역 */
+    .event-card01 {
+        height: 230px;
+        gap: 5px;
+    }
+
+    .event-card01-img {
+        width: 120px;
+    }
+
+    .event-card01-text {
+        font-size: 24px;
+    }
+
+    .event-card01-row02 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .box {
+        width: 130px;
+        height: 25px;
+        background-color: #DC4FBB;
+        position: absolute;
+        left: -16px;
+        top: 48px;
+        z-index: -1;
+    }
+
+    .event-card02-title {
+        font-size: 32px;
+    }
+
+    .event-card02 img {
+        width: 100%;
+    }
+
+    /* review 영역 */
+    .review-wrap {
+        padding: 0 2%;
+    }
+
+    /* contact 영역 */
+    .contact-left p {
+        font-size: 20px;
+    }
+
+    .contact-left h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* commom 영역 */
+
+    .sec {
+        padding: 80px 0;
+    }
+
+    .title {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+
+    .btn {
+        font-size: 16px;
+        margin: 40px auto 0;
+    }
+
+    /* kv 영역 */
+    .kv-wrap {
+        flex-direction: column-reverse;
+        padding: 60px 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .kv-wrap img {
+        width: 45%;
+    }
+
+    .kv-title {
+        font-size: 36px;
+    }
+
+    .kv-subtitle {
+        font-size: 18px;
+    }
+
+    .kv-text {
+        width: 90%;
+    }
+
+    .kv-desc {
+        margin: 10px 0 30px;
+        font-size: 18px;
+    }
+
+    .kv-btn {
+        font-size: 16px;
+    }
+
+    /* menu 영역 */
+    .menu {
+        width: 28%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menu-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu p {
+        font-size: 16px;
+    }
+
+    /* plan 영역 */
+    .plan-card-title {
+        font-size: 24px;
+    }
+
+    .span02-2 {
+        font-size: 24px;
+    }
+
+    /* discount 영역 */
+    .discount-title span {
+        font-size: 30px;
+    }
+
+    /* process영역 */
+    .process-wrap {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .process-card {
+        width: 24%;
+        min-width: 120px;
+    }
+
+    .process-card-bg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .process-card-bg img {
+        width: 40px;
+    }
+
+    .process-text {
+        font-size: 16px;
+    }
+
+    /* event 영역 */
+    .event-card01-wrap {
+        margin: 0;
+    }
+
+    .row {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .event-card01 {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .event-card01-img {
+        width: 30%;
+    }
+
+    .event-card01-row02 {
+        margin-top: 20px;
+    }
+
+    .event-card01-text {
+        font-size: 22px;
+        width: 60%;
+    }
+
+    .box {
+        width: 100px;
+        height: 18px;
+        top: 38px;
+        left: -14px;
+    }
+
+    .event-card01-text a {
+        font-size: 14px;
+    }
+
+    .event-card02-sec {
+        padding: 40px 0;
+    }
+
+    .event-card02-text {
+        padding-bottom: 40px;
+    }
+
+    .event-card02 img {
+        width: 50%;
+    }
+
+    .event-card02 {
+        width: 96%;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+    }
+
+    .event-card02-title {
+        font-size: 24px;
+    }
+
+    .event-card02-subtitle {
+        font-size: 18px;
+    }
+
+    .event-card02-desc h3 {
+        font-size: 18px;
+    }
+
+    /* contact 영역 */
+    .contact-left {
+        text-align: center;
+    }
+
+    .contact-left h2 {
+        font-size: 36px;
+    }
+
+    .contact-right {
+        margin-top: 40px;
+    }
+
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-title {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 554px) {
+
+    /* plan 영역 */
+    .plan-title {}
+
+    /* prcess 영역 */
+    .process-arrow {
+        display: none;
+    }
+
+    .process-card {
+        flex-basis: calc(100% / 3);
+    }
+}
+
+@media (max-width:541px) {
+    .br {
+        display: inline;
+    }
+}
