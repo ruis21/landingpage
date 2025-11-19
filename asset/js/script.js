@@ -11,22 +11,16 @@ $(function () {
         }
     });
 
+
 });
 
 $(document).ready(function () {
-    $("#popup").fadeIn();        // 자동으로 팝업 뜸
+    $(".popup").fadeIn();    // 자동으로 alert 뜸
 
-    $("#closePopup").click(function () {
-        $("#popup").fadeOut();     // 닫기 버튼 누르면 사라짐
+    $(".popup-btn").click(function () {
+        $(".popup").fadeOut(); // 확인 버튼으로 닫기
     });
 });
-
-$(window).on("load", function () {
-    setTimeout(() => {
-        AOS.refresh();
-    }, 300);
-});
-
 
 var planSwiper = new Swiper(".plan-wrap", {
     slidesPerView: 1,
