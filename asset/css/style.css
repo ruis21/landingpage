@@ -1069,6 +1069,7 @@ a {
     width: 500px;
     height: 300px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    z-index: 100;
 }
 
 .ok {}
