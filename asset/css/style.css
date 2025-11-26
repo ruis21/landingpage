@@ -1057,8 +1057,19 @@ a {
 }
 
 
-.popup {
+.popup-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #00000073;
     position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    display: none;
+}
+
+.popup {
+    position: absolute;
     top: 30%;
     left: 40%;
     background: #fff;
@@ -1072,7 +1083,6 @@ a {
     z-index: 100;
 }
 
-.ok {}
 
 .popup-btn {
     border: none;

@@ -15,10 +15,10 @@ $(function () {
 });
 
 $(document).ready(function () {
-    $(".popup").fadeIn();    // 자동으로 alert 뜸
+    $(".popup-wrap").fadeIn();    // 자동으로 alert 뜸
 
     $(".popup-btn").click(function () {
-        $(".popup").fadeOut(); // 확인 버튼으로 닫기
+        $(".popup-wrap").fadeOut(); // 확인 버튼으로 닫기
     });
 });
 
